@@ -88,6 +88,58 @@ textarea {
    ==========================================================================
 */
 
+/* General Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.875em;
+}
+
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 0.875em;
+  line-height: 1.285;
+}
+
+img {
+}
+
+figure {
+}
+
+address {
+  font-style: normal;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
 /* -------------- Base Header - Footer Styles -------------- */
 header,
 footer {
@@ -107,7 +159,6 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 100%;
   margin: 0;
 }
 
@@ -143,6 +194,11 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
 }
 
 footer .contact {
@@ -377,7 +433,7 @@ aside {
   }
 
   header nav {
-    width: 25%;
+    width: 20%;
   }
 
   header nav ul {
@@ -412,7 +468,7 @@ aside {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
   }
 
   /* Reviews */
@@ -483,6 +539,10 @@ aside {
 
 @media only screen and (min-width: 1200px) {
   /* Desktop Styles Here */
+  header {
+    padding: 15px 0;
+  }
+
   .content-wrapper {
     max-width: 960px;
   }

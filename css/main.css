@@ -97,6 +97,8 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
+  text-align: left;
 }
 
 ul,
@@ -111,13 +113,16 @@ a {
 
 h2 {
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
   font-size: 1.875em;
 }
 
 h3,
 h4 {
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
   font-size: 1.875em;
+  margin: 20px 0;
 }
 
 p {
@@ -126,9 +131,11 @@ p {
 }
 
 img {
+  width: 100%;
 }
 
 figure {
+  margin: 0;
 }
 
 address {
@@ -161,6 +168,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -238,6 +253,10 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url(../img/unplugged-retreat-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -287,6 +306,9 @@ input[type="button"] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url("../img/rawpixel-800820-unsplash1.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .features h2 {
@@ -368,6 +390,7 @@ input[type="button"] {
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .faq-content {
@@ -513,6 +536,9 @@ input[type="button"] {
   }
 
   /* Hero Area */
+  .hero-area {
+    min-height: 600px;
+  }
 
   .hero-area h1 {
     font-size: 3em;
@@ -535,6 +561,10 @@ input[type="button"] {
   }
 
   /* Features */
+  .figures h2 {
+    margin-bottom: 20px;
+  }
+
   .features article {
     display: flex;
     justify-content: center;
@@ -557,7 +587,13 @@ input[type="button"] {
     width: 85%;
   }
 
-  .reviews article div {
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
+
+  .reviews article div,
+  .reviews article figure {
     width: 49%;
   }
 
@@ -664,7 +700,7 @@ input[type="button"] {
   /* Hero */
   .hero-area h1 {
     font-size: 3.75em;
-    width: 60%;
+    width: 80%;
   }
 
   /* Aside */
